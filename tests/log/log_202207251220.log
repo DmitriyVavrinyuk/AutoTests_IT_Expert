@@ -1,0 +1,36 @@
+
+------
+Test: None
+Time: 2022-07-25 12:20:38.917941
+Request method: POST
+Request URL: http://localmail.itexpert.ru:5057/ServiceModel/AuthService.svc/Login
+Request data: None
+Request json: {'UserName': 'Supervisor', 'UserPassword': '!Supervisor123Test!'}
+Request cookies: {'Content-Type': 'application/json', 'User-Agent': 'PostmanRuntime/7.29.0', 'Accept': '*/*', 'Cache-Control': 'Cache-Control', 'Host': 'localmail.itexpert.ru:5057', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '69'}
+Request headers: {}
+
+-------
+Response code: 200
+Response text: {"RedirectUrl":null,"PasswordChangeUrl":null,"Exception":null,"Code":0,"Message":""}
+Response head: {'Date': 'Mon, 25 Jul 2022 09:20:38 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Server': 'Kestrel', 'Content-Length': '84', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'Set-Cookie': 'BPMSESSIONID=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; samesite=lax, .ASPXAUTH=CfDJ8CdbAg3OuuZKuk0QG3Gx5UUISYElL1FzAaeYbmoBT4nGkkU7XxkwcdHOOzTCHUvd_MVmeDAL8a9WuX1JRriEjMv3t7g4VNAjFTpmbBkNICs7SNUFfAXsYci7Qr1yJHMQxFLFZQJ_RbGZeV_0YLUUDedPZRYkaqSe8qr3nAj1f-rIxCeXNu_0F4aw-ET1lAmfTjlAuMThzsCZtN_9UKKAlC-qejh_MCSjgUeFrZPVwZmV0z4f51Al3bukiI2jhbote34YRdoIFC7wKXpTV6vz2e4DLl7ubwuPC2bvH90yKtOafxFBqtavBKktX_9TgIz0PlJ8fYlucUFH5_yKTcGxcYfduj5SQ0a9NM82clATzssVEXYL38mvmNmbBmX3E3Xdgr7lkR9F0ObkV1QIoHnjoDlioTzadJLowz__WBPMPLwT3Efdd0EkJiX1_hSEbL6PejNCDs4XLZh-WhiiuAS9wY3GtCmnuXKnwUCXrdQc24nAZHobyB1KuCnt29kQIpV0kfeqmIm2GVx6H5kwGhz0U-Vzt2sGFJrEdh8sr_FohZBV8NG3U-vPi-Wby2cdvII-JDlSnwPDFt5J4tuDIUbIgvsUHmQtcvLZT8yBerclmf3El1Txfpk9gfYfLQaqfM6V8w; path=/; samesite=lax; httponly, CsrfToken=CfDJ8CdbAg3OuuZKuk0QG3Gx5UXdj6nEh_U3YSPRtYY6iH-F8YpTAxaFN9iY5j8NOL66oGMD5FAp2J1ut8kIJpJWbhdgjcE_WJhn20XQg_q38IzB5W_-nymWFQytEXggKeB7udQPPSEk4H464kK6K4Gmidw; path=/; samesite=lax; httponly, BPMCSRF=CfDJ8CdbAg3OuuZKuk0QG3Gx5UUAg_npg4cFilSEt8qNUgQ43BYe_qdmgzwC9b7BjY5fHXB9NioVktCIDohZFcODgByWkMxEIX5uNl7CnEU9hOMS4nZWU2jTX1HPF6pAcHsUv88vs6ZhoF8V6-GFPj2G5woWoDse8L8Ofy5-70yc0QPowBr_CpbCg1OJdc8aeBR8jA; path=/; samesite=lax', 'X-Frame-Options': 'SAMEORIGIN'}
+Response cookies: <RequestsCookieJar[<Cookie .ASPXAUTH=CfDJ8CdbAg3OuuZKuk0QG3Gx5UUISYElL1FzAaeYbmoBT4nGkkU7XxkwcdHOOzTCHUvd_MVmeDAL8a9WuX1JRriEjMv3t7g4VNAjFTpmbBkNICs7SNUFfAXsYci7Qr1yJHMQxFLFZQJ_RbGZeV_0YLUUDedPZRYkaqSe8qr3nAj1f-rIxCeXNu_0F4aw-ET1lAmfTjlAuMThzsCZtN_9UKKAlC-qejh_MCSjgUeFrZPVwZmV0z4f51Al3bukiI2jhbote34YRdoIFC7wKXpTV6vz2e4DLl7ubwuPC2bvH90yKtOafxFBqtavBKktX_9TgIz0PlJ8fYlucUFH5_yKTcGxcYfduj5SQ0a9NM82clATzssVEXYL38mvmNmbBmX3E3Xdgr7lkR9F0ObkV1QIoHnjoDlioTzadJLowz__WBPMPLwT3Efdd0EkJiX1_hSEbL6PejNCDs4XLZh-WhiiuAS9wY3GtCmnuXKnwUCXrdQc24nAZHobyB1KuCnt29kQIpV0kfeqmIm2GVx6H5kwGhz0U-Vzt2sGFJrEdh8sr_FohZBV8NG3U-vPi-Wby2cdvII-JDlSnwPDFt5J4tuDIUbIgvsUHmQtcvLZT8yBerclmf3El1Txfpk9gfYfLQaqfM6V8w for localmail.itexpert.ru/>, <Cookie BPMCSRF=CfDJ8CdbAg3OuuZKuk0QG3Gx5UUAg_npg4cFilSEt8qNUgQ43BYe_qdmgzwC9b7BjY5fHXB9NioVktCIDohZFcODgByWkMxEIX5uNl7CnEU9hOMS4nZWU2jTX1HPF6pAcHsUv88vs6ZhoF8V6-GFPj2G5woWoDse8L8Ofy5-70yc0QPowBr_CpbCg1OJdc8aeBR8jA for localmail.itexpert.ru/>, <Cookie CsrfToken=CfDJ8CdbAg3OuuZKuk0QG3Gx5UXdj6nEh_U3YSPRtYY6iH-F8YpTAxaFN9iY5j8NOL66oGMD5FAp2J1ut8kIJpJWbhdgjcE_WJhn20XQg_q38IzB5W_-nymWFQytEXggKeB7udQPPSEk4H464kK6K4Gmidw for localmail.itexpert.ru/>]>
+
+-------
+
+------
+Test: None
+Time: 2022-07-25 12:20:39.144814
+Request method: POST
+Request URL: http://localmail.itexpert.ru:5057/rest/IteESMIntegrationService/v1/UpdateMaterial
+Request data: None
+Request json: {'Material': {'Code': '000001236797', 'Class': 'G03', 'Name': 'Комплект крепежный TLK/TLK-FPFP-50', 'Full_Name': 'Комплект крепежный (винт, шайба, гайка, упаковка 50 шт.) TLK/TLK-FPFP-50', 'UOM_Base': '001', 'UOM_BaseName': 'ШТ', 'UOM_Weight': '002', 'UOM_Volume': '003', 'UOM_Size': '003', 'UOM_ForOrder': '004', 'Weight_Netto': '1', 'Weight_Brutto': '1', 'Volume': '15', 'Lenght': '10', 'Width': '20', 'Height': '5', 'Barcode': '', 'Block': False, 'Deletion_mark': False, 'Manufacturer': '1С', 'Brand': 'AM002540', 'PartNumber': 'Тестовые данные для импорта'}}
+Request cookies: {'Content-Type': 'application/json', 'User-Agent': 'PostmanRuntime/7.29.0', 'Accept': '*/*', 'Cache-Control': 'Cache-Control', 'Host': 'localmail.itexpert.ru:5057', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '69', 'BPMCSRF': 'CfDJ8CdbAg3OuuZKuk0QG3Gx5UUAg_npg4cFilSEt8qNUgQ43BYe_qdmgzwC9b7BjY5fHXB9NioVktCIDohZFcODgByWkMxEIX5uNl7CnEU9hOMS4nZWU2jTX1HPF6pAcHsUv88vs6ZhoF8V6-GFPj2G5woWoDse8L8Ofy5-70yc0QPowBr_CpbCg1OJdc8aeBR8jA'}
+Request headers: <RequestsCookieJar[<Cookie .ASPXAUTH=CfDJ8CdbAg3OuuZKuk0QG3Gx5UUISYElL1FzAaeYbmoBT4nGkkU7XxkwcdHOOzTCHUvd_MVmeDAL8a9WuX1JRriEjMv3t7g4VNAjFTpmbBkNICs7SNUFfAXsYci7Qr1yJHMQxFLFZQJ_RbGZeV_0YLUUDedPZRYkaqSe8qr3nAj1f-rIxCeXNu_0F4aw-ET1lAmfTjlAuMThzsCZtN_9UKKAlC-qejh_MCSjgUeFrZPVwZmV0z4f51Al3bukiI2jhbote34YRdoIFC7wKXpTV6vz2e4DLl7ubwuPC2bvH90yKtOafxFBqtavBKktX_9TgIz0PlJ8fYlucUFH5_yKTcGxcYfduj5SQ0a9NM82clATzssVEXYL38mvmNmbBmX3E3Xdgr7lkR9F0ObkV1QIoHnjoDlioTzadJLowz__WBPMPLwT3Efdd0EkJiX1_hSEbL6PejNCDs4XLZh-WhiiuAS9wY3GtCmnuXKnwUCXrdQc24nAZHobyB1KuCnt29kQIpV0kfeqmIm2GVx6H5kwGhz0U-Vzt2sGFJrEdh8sr_FohZBV8NG3U-vPi-Wby2cdvII-JDlSnwPDFt5J4tuDIUbIgvsUHmQtcvLZT8yBerclmf3El1Txfpk9gfYfLQaqfM6V8w for localmail.itexpert.ru/>, <Cookie BPMCSRF=CfDJ8CdbAg3OuuZKuk0QG3Gx5UUAg_npg4cFilSEt8qNUgQ43BYe_qdmgzwC9b7BjY5fHXB9NioVktCIDohZFcODgByWkMxEIX5uNl7CnEU9hOMS4nZWU2jTX1HPF6pAcHsUv88vs6ZhoF8V6-GFPj2G5woWoDse8L8Ofy5-70yc0QPowBr_CpbCg1OJdc8aeBR8jA for localmail.itexpert.ru/>, <Cookie CsrfToken=CfDJ8CdbAg3OuuZKuk0QG3Gx5UXdj6nEh_U3YSPRtYY6iH-F8YpTAxaFN9iY5j8NOL66oGMD5FAp2J1ut8kIJpJWbhdgjcE_WJhn20XQg_q38IzB5W_-nymWFQytEXggKeB7udQPPSEk4H464kK6K4Gmidw for localmail.itexpert.ru/>]>
+
+-------
+Response code: 200
+Response text: {"isSuccessful":true,"message":null,"success":true,"error":null,"status":0}
+Response head: {'Date': 'Mon, 25 Jul 2022 09:20:39 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Server': 'Kestrel', 'Content-Length': '75', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'Set-Cookie': 'BPMSESSIONID=CfDJ8CdbAg3OuuZKuk0QG3Gx5UUPj27Imhzd09Dmfz5YaxCp2XeaubcaIbGSiLw5eBWATxsLop46bNSBRgzjcoMpF6BMGtIDpcUCiHZ9dMt6Pr2rusOXp1%2FL%2F62Ps%2BoCRUfgX22RvRzIaZV5m7ZEveoJfDhteDwmeDMikWOjI97VFiBI; path=/; samesite=lax; httponly', 'X-Frame-Options': 'SAMEORIGIN'}
+Response cookies: <RequestsCookieJar[<Cookie BPMSESSIONID=CfDJ8CdbAg3OuuZKuk0QG3Gx5UUPj27Imhzd09Dmfz5YaxCp2XeaubcaIbGSiLw5eBWATxsLop46bNSBRgzjcoMpF6BMGtIDpcUCiHZ9dMt6Pr2rusOXp1%2FL%2F62Ps%2BoCRUfgX22RvRzIaZV5m7ZEveoJfDhteDwmeDMikWOjI97VFiBI for localmail.itexpert.ru/>]>
+
+-------
