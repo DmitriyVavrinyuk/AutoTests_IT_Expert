@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+log/
+.pytest_cache/
+mi_lib/.pytest_cache/
+tests/.pytest_cache/
+tests/allure_result_folder/
+tests/log/
+tests/requirements.txt
+
+/main.py
+/test
+
