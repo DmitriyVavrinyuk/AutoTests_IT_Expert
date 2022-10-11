@@ -1,6 +1,7 @@
 # Default ignored files
 /shelf/
 log/
+allure_result_folder/
 .pytest_cache/
 mi_lib/.pytest_cache/
 tests/.pytest_cache/

@@ -229,11 +229,8 @@ class TestCreateOS_SAPFIR_False(BaseCase):
         print(response.text)
 
         obj = json.loads(response.text)
-        # print(obj)
-
         assert obj["message"] == 'OK', f"The value of 'MESSAGE' is not correct"
         assert obj["isSuccessful"] == True, f"The value of 'success' is not correct"
-
         for str in obj["result"]:
             for key, value in str.items():
                 if key == "TYPE":
