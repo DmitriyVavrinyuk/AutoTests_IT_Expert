@@ -5,6 +5,7 @@ from my_lib.my_requests import MyRequests
 from my_lib.base_case import BaseCase
 import allure
 
+
 # Название: Создать ОС в САПФИР
 # Место положение: раздел Ввод ИТ-активов в эксплуатации
 # Тест кейс: https://jira.itexpert.ru/secure/Tests.jspa#/testCase/IT4ITMVP-T2108
