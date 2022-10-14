@@ -1,4 +1,5 @@
 import json
+import warnings
 from my_lib.assertions import Assertion
 from my_lib.my_requests import MyRequests
 from my_lib.base_case import BaseCase
@@ -163,17 +164,17 @@ class TestCreateOS_SAPFIR_False(BaseCase):
         # print(json_data_dict)
         for key, value in json_data_dict.items():
             if value == "":
-                print(key)
+                warnings.warn(f"Получены не все данные {key} по модели")
 
         assert json_data_dict["NAME_TEXT"] != "", "Параметр Code не может быть пустым."
         assert json_data_dict["SMTP_ADDR"] != "", "Параметр Name не может быть пустым."
 
         response = MyRequests.post(self.url, json=json_data, headers=self.header, cookies=self.jar)
         Assertion.assert_code_status(response, 200)
-        # print(response.text)
-        obj = json.loads(response.text)
-        # print(obj)
 
+        # print(response.text)
+
+        obj = json.loads(response.text)
         assert obj["message"] == 'OK', f"The value of 'MESSAGE' is not correct"
         assert obj["isSuccessful"] == True, f"The value of 'success' is not correct"
 

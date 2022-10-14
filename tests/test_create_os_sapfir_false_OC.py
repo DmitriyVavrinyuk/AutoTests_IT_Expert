@@ -1,4 +1,5 @@
 import json
+import warnings
 from my_lib.assertions import Assertion
 from my_lib.my_requests import MyRequests
 from my_lib.base_case import BaseCase
@@ -25,7 +26,6 @@ class TestCreateOS_SAPFIR_False(BaseCase):
             "UserName": "d.vavrinyuk",
             "UserPassword": "123"
         }
-
 
         self.url = "http://192.168.0.73:44400/test/IteURLRequestSAPToCheckStock2"
         self.jar, self.header = MyRequests.user_auth(self, auth_data, env)
@@ -161,10 +161,10 @@ class TestCreateOS_SAPFIR_False(BaseCase):
         # проверка всех полей на заполнение
         json_data_list = json_data["item"]
         json_data_dict = json_data_list[0]
-        # print(json_data_dict)
-        # for key, value in json_data_dict.items():
-        #     if value == "":
-        #         print(key)
+        print(json_data_dict)
+        for key, value in json_data_dict.items():
+            if value == "":
+                warnings.warn(f"Получены не все данные {key} по модели")
 
         assert json_data_dict["NAME_TEXT"] != "", "Параметр Code не может быть пустым."
         assert json_data_dict["SMTP_ADDR"] != "", "Параметр Name не может быть пустым."

@@ -1,7 +1,5 @@
 import json
-
 import allure
-
 from my_lib.assertions import Assertion
 import warnings
 from my_lib.my_requests import MyRequests
@@ -26,13 +24,13 @@ class TestUpdateMaterial(BaseCase):
 # Если значение найдено - обновляем атрибуты, если не найдено - создаем новую запись в справочнике ИТА.
     @allure.description("Авторизация и получение необходимых cookie и headers")
     def setup(self):
-        env = 'http://localmail.itexpert.ru:5057'
+        env = 'http://localmail.itexpert.ru:5055'
         auth_data = {
             "UserName": "Supervisor",
             "UserPassword": "!Supervisor123Test!"
         }
 
-        self.url = "http://localmail.itexpert.ru:5057/rest/IteESMIntegrationService/v1/UpdateMaterial"
+        self.url = "http://localmail.itexpert.ru:5055/rest/IteESMIntegrationService/v1/UpdateMaterial"
         self.jar, self.header = MyRequests.user_auth(self, auth_data, env)
 
 # Запуск первой проверки: python - m pytest - s test_update_material.py - k testpdateaterial - k test_request_for_supply
@@ -43,7 +41,7 @@ class TestUpdateMaterial(BaseCase):
             "Material":
                 {
                 #Рабочее место "Активы", раздел "Справочник ИТ-активов"
-                "Code": "000001236797",     #Поле "Номенклатурный №"
+                "Code": "000001236799",     #Поле "Номенклатурный №"
                 "Class": "G030101", #GUID Категории ЕСМ (Class) 12adbf4f-d553-11e1-bd21-005056ae005c
                 "Name": "Комплект крепежный TLK/TLK-FPFP-50", #Поле Наименование Б/У
                 "Full_Name": "Комплект крепежный (винт, шайба, гайка, упаковка 50 шт.) TLK/TLK-FPFP-50", #Поле Описание
@@ -58,11 +56,11 @@ class TestUpdateMaterial(BaseCase):
                 "Volume": "15",             #Объем
                 "Lenght": "10",             #Длмна
                 "Width": "20",              #Ширина
-                "Height": "5",              #Высота
+                "Height": "15",              #Высота
                 "Barcode": "",              #Эквивалентен ШтрихКод из КСУ НСИ
                 "Block": False,             #эквивалентен Блокировка из КСУ НСИ – true/false, без пустых значения
                 "Deletion_mark": False,     #эквивалентен ПометкаУдаления – true/false, без пустых значения
-                "Manufacturer": "1С",         #Изготовитель
+                "Manufacturer": "CAREL INDUSTRIES S.p.a",         #Изготовитель
                 "Brand": "AM002540",                #Модель
                 "PartNumber": "Тестовые данные для импорта"            # Парт-номер
             }
